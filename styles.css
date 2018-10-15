@@ -1,0 +1,158 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+body{
+  /*Background color for the whole page and font style and color*/
+    font-family: verdana;
+    background-color: #588e51;
+    color: blanchedalmond;
+}
+h1, h2, h3, h4, {
+  margin: 0;
+}
+header, nav, footer, section, article, div{
+  box-sizing: border-box;
+}
+* {
+  box-sizing: border-box;
+}
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* gives heading differnt style of boarders*/
+.header {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  min-height: 56px;
+  transition: min-height 0.3s;
+}
+.header1{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  height: 72px;
+  margin-right: 1em;
+  vertical-align: top;
+  margin-top: 12px;
+  border: none;
+}
+
+.header2 {
+  font-weight: 300;
+  font-size: 3em;
+  margin: 0.75em 0.25em;
+  display: inline-block;
+  color: blanchedalmond;
+}
+.nav{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav1{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.nav2{
+  box-sizing: border-box;
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  line-height: 20px;
+  padding: 20px;
+  text-transform: capitalize;
+}
+.nav a {
+  text-decoration: none;
+  color: palegoldenrod;
+  padding: 1.5em;
+}
+.nav a:hover{
+  text-decoration: underline;
+  color: blue;
+}
+main{
+  box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1{
+  /* Changes the color and size of heading*/
+  text-shadow: 4px 4px 4px #aaa;
+}
+p{
+  text-align: justify;
+}
+.list{
+    list-style-type: square;
+    margin: 0;
+    padding: 0;
+}
+ol {
+  /*Styles the background of the list*/
+    padding: 20px;
+    text-align: justify;
+}
+ul {
+    padding: 20px;
+    margin: 0;
+}
+
+ol li {
+    padding: 5px;
+    margin-left: 35px;
+    font-family:verdana;
+}
+
+ul li {
+    /* margin-left: 20px; */
+    list-style-position: inside;
+    list-style-type:bullet;
+    text-transform: capitalize;
+    font-family: verdana;
+}
+.indent{
+  text-indent: 20px;
+  font-family: verdana;
+  margin-right: 20px;
+  margin-left: 20px;
+  text-align: justify;
+  
+}
+.pic{
+  padding: 20px;
+}
+
+.tableexp{
+  font-family: verdana;
+  color:peachpuff;
+  font-weight: bold;
+}
+ 
+  /*style boarder of the table*/
+  img, embed, objet, video {
+  max-width: 100%;
+  height: auto;
+  border: inset;
+  border-width: 10px;
+  border-color: silver;
+
+}
+  
+table{
+  margin:auto;
+}
+footer{
+  border-top: 1px solid bisque;
+  padding: 1em;
+  width: 100%;
+}

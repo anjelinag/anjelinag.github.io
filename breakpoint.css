@@ -1,0 +1,56 @@
+menu.recipe {
+  display: flex;
+  flex-wrap: wrap;
+}
+.header3{
+	display: none;
+}
+@media screen and (max-width: 550px) {
+  .logo {
+    height: 48px;
+    margin-right: 0.5em;
+  }
+  .header2 {
+    margin-left: 0;
+    font-size: 1.45em;
+    vertical-align: bottom;
+  }
+  .nav {
+    z-index: 10;
+    background-color: #336d2b;
+    width: 300px;
+    position: absolute;
+    /* This trasform moves the drawer off canvas. */
+    -webkit-transform: translate(-300px, 0);
+    transform: translate(-300px, 0);
+    /* Optionally, we animate the drawer. */
+    transition: transform 0.3s ease;
+  }
+  .nav.open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  .nav2 {
+    display: list-item;
+    width: 100%;
+    text-align: left;
+  }
+  .header3 {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    padding: 1em;
+  }
+  .header3 svg {
+    width: 32px;
+    fill: papayawhip;
+  }
+}
+
+/* @media screen and (min-width: 850px) {
+  main, .header1, .nav, .recipe {
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+} */

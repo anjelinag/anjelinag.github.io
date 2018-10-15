@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My First web-page!</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="breakpoint.css">
+  <link rel="stylesheet" type="text/css" href="nav.css">
+</head>
+<body>
+<header class="header">
+  <div class="header1">
+    <img class="logo" src="Images/injera.png" alt="Injera">
+  <h1 class="header2">How to make Injera.</h1>
+  <a id="menu" class="header3">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+    </svg>
+  </a>
+</header>
+
+<nav id="hide" class="nav">
+    <ul class="nav1">
+        <li class="nav2"><a href="#">Home</a></li>
+        <li class="nav2"><a href="#">About</a></li>
+        <li class="nav2"><a href="#">Contact</a></li>
+        <li class="nav2"><a href="#">Services</a></li>
+      </ul>
+</nav>
+<main>
+    <section class="recipe">
+       <h2>What Do I Need?</h2>
+    </section>
+    <div class="list">
+      <ul>
+        <li>3/4 cup teff flour.</li>
+        <li>1/4 cup barley flour.</li>
+        <li>1 cup water.</li>
+        <li>A pinch of dry yeast.</li>
+        <li>Vegetable oil.</li>
+      </ul>
+    </div>
+    <h3>What Do I Do?</h3>
+    <div class="list">
+      <ol>
+        <li> Put the teff flour in the bottom of a mixing bowl, and sift in the all-purpose flour.</li>
+        <li>Slowly add the water, stirring to avoid lumps.</li>
+        <li>Put the batter aside for a day or more (up to three days) to allow it to ferment. In this time, your injera batter will start to bubble and aquire the slight tanginess for which it's known. Note: If you find that your injera batter does not ferment on its own, try adding a teaspoon of yeast.</li>
+        <li>Heat a nonstick pan or lightly oiled cast-iron skillet until a water drop dacnces on the surface. Make suer the surface of a pan is smooth: Otherwise, your injera might fall apart when you try to remove it.</li>
+        <li>Coast the pan with a thin layer of batter. Injera should be thicker than a crepe, but not as thick as a traditional pancake. it will rise slightly when it heats.</li>
+        <li>Cook until holes appear on the surface of the bread. Once the surface is dry, remove the bread from the pan and let it cool.</li>
+      </ol>
+    </div>
+    <div class="pic">
+    <h4>Picture of Injera.</h4>
+    <table>
+      <tr>
+        <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Injera_%28during_Easter_Time%2C_Lalibela%2C_Ethiopia%29.JPG/1600px-Injera_%28during_Easter_Time%2C_Lalibela%2C_Ethiopia%29.JPG"width="100%" alt="Injera with vegetarian sauce">
+
+          <p class="tableexp">Injera with vegetarian sauce.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Alicha_1.jpg/250px-Alicha_1.jpg"width="100%" alt="Injera with meat and vegetable">
+         <p class="tableexp">Injera with meat and vegetable sauce.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src=https://upload.wikimedia.org/wikipedia/ja/d/d5/Injera_watt.JPG width="100%" alt="Traditionalway to serve Injera">
+          <p class="tableexp">Traditional way to serve Injera.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src=https://s-media-cache-ak0.pinimg.com/736x/91/4c/1c/914c1cd1a5b6270dcddd1640f289cacf.jpg width="100%" alt="Plain Injera">
+          <p class="tableexp">Plain Injera</p>
+        </td>
+      </tr>
+    </table>
+    </div>
+    <p class="gap_below">
+    <div class="indent">
+      If you have ever cooked pancakes, making injera might seem familiar. In both cases, tiny bubbles form on top as the batter cooks. Keeping an eye on these bubbles is a great way to see how close the pancake or injera is to being ready without peeking underneath.
+    </div>
+    </p>
+    <article class="indent">
+    <p>
+      These bubbles come from the carbon-dioxide produced by the leavener usually baking powder or soda in the case of pancakes, wild yeast in the case of injera. Neither batter contains much gluten. Most pancake recipes tell you not to mix the batter too much. If you do, gluten will develop, making them too chewy. Teff, the grain used to make injera, contains very little gluten to begin with. In both cases, the result is the same. With no gummy substance to blow up, most of the carbon-dioxide from the leaveners rapidly escapes into the air, leaving the little popped bubbles that contribute to the distinctive textures of these breads.
+    </p>
+    </article>
+    <footer><a href="https://www.exploratorium.edu/cooking/bread/recipe-injera.html">Source</a>
+    <p>Contact Information: <a href="mailto:anjeina_sertse@yahoo.com">anjelina</a></p>
+    </footer>
+</main>
+  <script>
+  /* Open the drawer on the menu icon*/
+      var menu = document.querySelector('#menu');
+      var main = document.querySelector('main');
+      var hide = document.querySelector('.nav');
+
+      menu.addEventListener('click', function(e) {
+        hide.classList.toggle('open');
+        e.stopPropagation();
+      });
+      main.addEventListener('click', function() {
+        hide.classList.remove('open');
+      });
+  </script>
+</body>
+</html>
